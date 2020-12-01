@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace task_fraunhofer
+namespace task
 {
     class Program
     {
