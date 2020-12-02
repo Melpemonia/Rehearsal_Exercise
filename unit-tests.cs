@@ -1,11 +1,5 @@
-using System;
-using System.Collections.Generic;
-using task;
+//To use the following unit tests, you can either replace the previous Main with this one or add them in it, for example
 
-namespace unit-tests
-{
-    class Program
-    {
         static void Main(string[] args)
         {
             string text = System.IO.File.ReadAllText(@"names.txt");
@@ -43,5 +37,3 @@ namespace unit-tests
             //Indeed the value of "LINDA" is 12+9+14+4+1=40, et on a bien 1*40+2*53=146
             Console.WriteLine(TotalNames(new List<string> { "LINDA", "COLIN" }));
         }
-    }
-}
