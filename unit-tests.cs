@@ -28,9 +28,22 @@ namespace unit-tests
 
             //This code verifies that the function SumName returns 53 for the name "COLIN", which is its value
             Console.WriteLine(SumName("COLIN"));
+            //We can add that the function works also with the following example, even though it is useless for our file names.txt:
+            Console.WriteLine(SumName("colin"));
+            //it is in the contrary impossible to use this function for words with accents:
+            Console.WriteLine(TotalNames(new List<string> { "léo" })); //returns 164 instead of 32
 
-            //We can verify with this code that the TotalSum on a list with just the name "COLIN" returns the product of its value (53) with its position (1)
+            //We can verify that the TotalSum is correct with the several following tests:
+            //Nn a list with just the name "COLIN" returns the product of its value (53) with its position (1)
             Console.WriteLine(TotalNames( new List<string> { "COLIN" }));
+                
+            //On lists emty or almost empty, where the result is 0:
+            Console.WriteLine(TotalNames(new List<string> { "" }));
+            Console.WriteLine(TotalNames(new List<string> {  }));
+
+            //With a small list where we do the calcul at hand, so here we obtain 146
+            //Indeed the value of "LINDA" is 12+9+14+4+1=40, et on a bien 1*40+2*53=146
+            Console.WriteLine(TotalNames(new List<string> { "LINDA", "COLIN" }));
         }
     }
 }
