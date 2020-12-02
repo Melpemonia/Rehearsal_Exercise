@@ -1,4 +1,4 @@
-//To use the following unit tests, you can either replace the previous Main with this one or add them in it, for example
+//To use the following unit tests, you can for example either replace the previous Main with this one or add the tests in it
 
         static void Main(string[] args)
         {
@@ -10,7 +10,7 @@
             
             //We can verify that the name "COLIN" is at the position 938 with the following code:
             Console.WriteLine(l_names[937]);
-            //It indeed returns "COLIN"
+            //It indeed returns "COLIN", so the list seems correct
 
             //We can verify the function ValChar with the following code:
             Console.WriteLine(ValChar('A'));
