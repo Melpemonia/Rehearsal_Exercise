@@ -8,8 +8,6 @@ namespace unit-tests
     {
         static void Main(string[] args)
         {
-            List<string> noms = new List<string>
-            {
             string text = System.IO.File.ReadAllText(@"names.txt");
 
             List<string> l_names = SplitWords(text);
