@@ -57,7 +57,7 @@ namespace task
             return n;
         }
         
-        //Main programm:
+        //Main program:
         static void Main(string[] args)
         {
             string text = System.IO.File.ReadAllText(@"names.txt"); //You have to write the path of the file name.txt here, or to put it on the bin/Debug repertory of a Visual Studio project
